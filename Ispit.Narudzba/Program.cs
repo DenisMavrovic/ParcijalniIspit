@@ -23,7 +23,10 @@ namespace Ispit.Narudzba
             narudzba2.Naziv = "Jabuka";            
             PretplacenaMetoda(narudzba1);
             PretplacenaMetoda(narudzba2);
+            // ovo liniju niže je potrebno otkomentirati jer se preko nje poziva event koji poziva Distributer_NadrudzbaUIsporuci pretplaćenu metodu
             //distributer.KrecemSDostavom();
+            
+            // ovu pretplacenu metodu ne pozivamo direktno nego kroz event u distributer.KrecemSDostavom();
             Distributer_NarudzbaUIsporuci(DateTime.Now);
             
 
