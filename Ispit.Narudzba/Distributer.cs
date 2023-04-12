@@ -8,6 +8,7 @@ namespace Ispit.Narudzba
 {
     internal class Distributer
     {
+        // vec imate delegat u glavnom Program.cs-u pa vam ne treba i ovdje
         public delegate void NarudzbaNarucena(DateTime dateTime);
         public event NarudzbaNarucena NarudzbaUIsporuci;
 
